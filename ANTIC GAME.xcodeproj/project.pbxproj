@@ -10,6 +10,7 @@
 		D5534C1923DA158D000D5429 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5534C1823DA158D000D5429 /* main.swift */; };
 		D5534C2023DA15C0000D5429 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5534C1F23DA15C0000D5429 /* Weapon.swift */; };
 		D5534C2223DA17A2000D5429 /* Ax.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5534C2123DA17A2000D5429 /* Ax.swift */; };
+		D5534C2423DA1853000D5429 /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5534C2323DA1853000D5429 /* Sword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		D5534C1823DA158D000D5429 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D5534C1F23DA15C0000D5429 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		D5534C2123DA17A2000D5429 /* Ax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ax.swift; sourceTree = "<group>"; };
+		D5534C2323DA1853000D5429 /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				D5534C1823DA158D000D5429 /* main.swift */,
 				D5534C1F23DA15C0000D5429 /* Weapon.swift */,
 				D5534C2123DA17A2000D5429 /* Ax.swift */,
+				D5534C2323DA1853000D5429 /* Sword.swift */,
 			);
 			path = "ANTIC GAME";
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5534C1923DA158D000D5429 /* main.swift in Sources */,
+				D5534C2423DA1853000D5429 /* Sword.swift in Sources */,
 				D5534C2023DA15C0000D5429 /* Weapon.swift in Sources */,
 				D5534C2223DA17A2000D5429 /* Ax.swift in Sources */,
 			);
