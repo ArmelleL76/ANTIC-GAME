@@ -26,5 +26,14 @@ class Game {
     
 }
 // Players give their names
+func collectNamePlayer(number : String)-> String{
+    print("\(number)Player give your Name and do return")
+    let player = Player(namePlayer : "", numberTeam: 0)
+  if  let name = readLine(){print("Bienvenue: \(name)")
+        player.namePlayer = name
+  
+    }
+    return player.namePlayer
+}
 
 //Players give names to their warriors
