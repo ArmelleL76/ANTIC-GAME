@@ -7,7 +7,11 @@
 //
 
 import Foundation
-
+//Short presentation of the game
 var display = Game()
 print(display.presentation())
+
+//We give name to the players
+
+//The players form their team
 
