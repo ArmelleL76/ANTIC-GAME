@@ -9,6 +9,7 @@
 import Foundation
 class Game {
     var str : String = ""
+    var number : String = "first"
     init(){}
     func presentation()-> String{
         //Présentation du jeu
