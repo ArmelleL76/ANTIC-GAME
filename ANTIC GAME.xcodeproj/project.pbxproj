@@ -10,6 +10,7 @@
 		D518308F23DB1A1400BCE6DE /* Viking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518308E23DB1A1400BCE6DE /* Viking.swift */; };
 		D518309123DB1A2900BCE6DE /* Gladiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518309023DB1A2900BCE6DE /* Gladiator.swift */; };
 		D518309323DB1A3800BCE6DE /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518309223DB1A3800BCE6DE /* Knight.swift */; };
+		D518309523DB1B5600BCE6DE /* Chest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518309423DB1B5600BCE6DE /* Chest.swift */; };
 		D5534C1923DA158D000D5429 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5534C1823DA158D000D5429 /* main.swift */; };
 		D5534C2023DA15C0000D5429 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5534C1F23DA15C0000D5429 /* Weapon.swift */; };
 		D5534C2223DA17A2000D5429 /* Ax.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5534C2123DA17A2000D5429 /* Ax.swift */; };
@@ -35,6 +36,7 @@
 		D518308E23DB1A1400BCE6DE /* Viking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viking.swift; sourceTree = "<group>"; };
 		D518309023DB1A2900BCE6DE /* Gladiator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gladiator.swift; sourceTree = "<group>"; };
 		D518309223DB1A3800BCE6DE /* Knight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
+		D518309423DB1B5600BCE6DE /* Chest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chest.swift; sourceTree = "<group>"; };
 		D5534C1523DA158D000D5429 /* ANTIC GAME */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ANTIC GAME"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5534C1823DA158D000D5429 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D5534C1F23DA15C0000D5429 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				D518308E23DB1A1400BCE6DE /* Viking.swift */,
 				D518309023DB1A2900BCE6DE /* Gladiator.swift */,
 				D518309223DB1A3800BCE6DE /* Knight.swift */,
+				D518309423DB1B5600BCE6DE /* Chest.swift */,
 			);
 			path = "ANTIC GAME";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D518309523DB1B5600BCE6DE /* Chest.swift in Sources */,
 				D596264823DA34B000FCBD7F /* Warrior.swift in Sources */,
 				D5534C1923DA158D000D5429 /* main.swift in Sources */,
 				D5534C2623DA18C2000D5429 /* BroadSword.swift in Sources */,
