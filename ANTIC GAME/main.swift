@@ -12,11 +12,8 @@ var display = Game()
 print(display.presentation())
 
 //We collect the players'names
-var name1 : String
-name1 = collectNamePlayer(number: "first")
-var name2 : String
-name2 = collectNamePlayer(number: "second")
-
+var namePlayer1 : String = collectNamePlayer(number: "first")
+var namePlayer2 : String = collectNamePlayer(number: "second")
 
 //The players give names to their warriors
 
