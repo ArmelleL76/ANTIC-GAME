@@ -29,7 +29,7 @@ class Game {
 func collectNamePlayer(number : String)-> String{
     print("\(number)Player give your Name and do return")
     let player = Player(namePlayer : "", numberTeam: 0)
-  if  let name = readLine(){print("Bienvenue: \(name)")
+  if  let name = readLine(){print("Welcome and good game: \(name)")
         player.namePlayer = name
   
     }
