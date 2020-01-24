@@ -24,3 +24,6 @@ class Game {
    return myText }
     
 }
+// Players give their names
+
+//Players give names to their warriors
