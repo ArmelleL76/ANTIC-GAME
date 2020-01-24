@@ -13,5 +13,9 @@ print(display.presentation())
 
 //We collect the players'names
 
-//The players form their team
+//The players give names to their warriors
+
+//The players form their team and display teams
+
+
 
