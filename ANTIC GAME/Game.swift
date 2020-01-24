@@ -13,7 +13,7 @@ class Game {
     func presentation()-> String{
         //Présentation du jeu
         var myText : String = ""
-        myText = "************Welcome to French Game factory!***************\n\nYou will test the ANTIC FIGHT GAME: \n\n"
+        myText = "*********Welcome to French Game factory!************\n\nYou will test the ANTIC FIGHT GAME: \n\n"
         
         myText += "1. Two players choose three fighters to make a warrior's team. We'll have then two teams.Each player choose a fighter in his own team to meet another fighter in the other team.\n\n"
         myText += "2. Fighters fight together or choose to improve their arms or to gain more lives .At the end, the winner is the player with a fighter alive\n\n"
