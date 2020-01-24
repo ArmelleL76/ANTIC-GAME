@@ -11,7 +11,7 @@ import Foundation
 var display = Game()
 print(display.presentation())
 
-//We give name to the players
+//We collect the players'names
 
 //The players form their team
 
