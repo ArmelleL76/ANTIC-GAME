@@ -24,7 +24,7 @@ class Player{
     }
     
     func displayTeam ()
-    {print("       ---  TEAM : \(numberTeam)  ---   " + "---   PLAYER : \(namePlayer)   ---")
+    {print("       ---  TEAM : \(numberTeam)  ---   " + "---   PLAYER\(numberTeam) : \(namePlayer)   ---")
    }
     func play(fighter : Warrior)
     {

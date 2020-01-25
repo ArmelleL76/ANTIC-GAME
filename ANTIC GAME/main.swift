@@ -26,6 +26,11 @@ for index in 0...2 {
 fighterTeam2[index] += name.collectNameFighter(number: "second")
 }
 //The players form their team and display teams
+//commentaire à retirer print(fighterTeam1) donne
+// ["Thor","Lucius","Arthur"]
+var player1 = Player(namePlayer: namePlayer1, numberTeam: 1)
+var player2 = Player(namePlayer: namePlayer2, numberTeam: 2)
+player1.displayTeam()
 
-
+player2.displayTeam()
 
