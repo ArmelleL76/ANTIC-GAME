@@ -24,7 +24,7 @@ class Game {
         myText += "Here is a suggestion of optionnal names for your warriors :   \nVikings'names : Sigrid, Thor, Bjorn, Odin, Ragnar, Magnum... \nGladiators'names : Lucius, Marcus, Titus, Sextus, Quintus, Servius...\nKnights'names : Gauvain, Arthur, Perceval, Lancelot, Tristan...\n"
    return myText }
     
-}
+
 // Players give their names
 func collectNamePlayer(number : String)-> String{
     print("\(number)Player give your Name and do return")
@@ -37,3 +37,13 @@ func collectNamePlayer(number : String)-> String{
 }
 
 //Players give names to their warriors
+
+func collectNameFighter(number: String)->String
+{ print("\(number)Player give a name to your fighters viking, gladiator, knight, in this order and do return")
+ let fighter = Warrior(fighterName: "", armName: "", arm: Ax(), life: 100)
+    if let name = readLine(){ print("Welcome and good luck for fighting : \(name)")
+        fighter.fighterName = name}
+    return fighter.fighterName
+}
+
+}
