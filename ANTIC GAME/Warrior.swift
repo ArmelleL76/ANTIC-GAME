@@ -44,11 +44,12 @@ func increasePowerArm ()
         
     func description(range : Int) {
         var description : [String] = ["","",""]
-        for index in 0...range{
-            description[index] =  "Arm : \(self.armName[index])" + "   Life : \(self.life[index])" + "   Damages : \(self.arm.damage)"
-        }
         
-    }
+            description[range] =  "Arm : \(self.armName[range])" + "   Life : \(self.life[range])" + "   Damages : \(self.arm.damage)"
+       print("\(description[range])")
+        }
+  
+   
     func cureOneself(index: Int){
         self.life[index] +=  10 }
     
