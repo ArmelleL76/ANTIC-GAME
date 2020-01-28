@@ -48,7 +48,29 @@ func collectNameFighter(number: String)->String
 
 }  // } de la classe
 //fonction displayWarriorResults
-func displayWarriorResults()-> String{
+func displayWarriorResultsTeam1()-> String{
+    var display : String = ""
+    var fighterTeam1 : [String] = ["","",""]
+    for index in 0...2 {
+    fighterTeam1[index] += name.collectNameFighter(number: "first")
+    }
     
-    return "0"
+    
+    let warriorType1 : [String] = ["Viking", "Gladiator", "Knight"]
+    for index in 0...2 {
+        display += warriorType1[index] + fighterTeam1[index] }
+    return display
+}
+func displayWarriorResultsTeam2()-> String{
+    var display : String = ""
+    var fighterTeam2 : [String] = ["","",""]
+    for index in 0...2 {
+    fighterTeam2[index] += name.collectNameFighter(number: "first")
+    }
+    
+    
+    let warriorType2 : [String] = ["Viking", "Gladiator", "Knight"]
+    for index in 0...2 {
+        display += warriorType2[index] + fighterTeam2[index] }
+    return display
 }
