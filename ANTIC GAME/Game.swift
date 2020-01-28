@@ -44,7 +44,7 @@ func collectNameFighter(number: String)->String
     if let name = readLine(){ print("Welcome and good luck for fighting : \(name)")
         fighter.fighterName = name}
     return fighter.fighterName
-}
+} // } terminant la fonction
 
-}
+}  // } de la classe
 //fonction displayWarriorResults
