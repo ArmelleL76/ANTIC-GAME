@@ -9,45 +9,49 @@
 import Foundation
 class Warrior{
     var fighterName : String
-    var armName : String
-    var arm : Weapon
-    var life : Int
+    var armName : [String] = ["Ax", "Sword","BroadSword"]
+    var arm: Weapon
+    var damage : [Int] = [15,18,12]
+    var life : [Int] = [90,11,80]
     
     
-    init ( fighterName : String, armName : String, arm : Weapon, life : Int)
+    init ( fighterName : String, arm : Weapon)
     {
         self.fighterName = fighterName
-        self.armName = armName
         self.arm = arm
-        self.life = life
+        
         }
    
        
-func receiveDamage(damage : Int){
-            self.life = self.life - damage
+    func receiveDamage(damage : Int, index: Int){
+            self.life[index] = self.life[index] - damage
       //If life turns into negative value, life will be equal to zero
-    if self.life < 0
+    if self.life[index] < 0
             {
-                self.life = 0
+                self.life[index] = 0
             }
         }
         
         
         
-func fightAgainst(fighter : Warrior)
+    func fightAgainst(fighter : Warrior)
         {
-            fighter.receiveDamage(damage : self.arm.damage)
+            fighter.receiveDamage(damage: self.arm.damage, index : 1)
         }
 func increasePowerArm ()
         {self.arm.damage += 8}
     
         
-func description() ->String{
-           return "Arm : \(self.armName)" + "   Life : \(self.life)" + "   Damages : \(self.arm.damage)"
+    func description(range : Int) {
+        var description : [String] = ["","",""]
+        for index in 0...range{
+            description[index] =  "Arm : \(self.armName[index])" + "   Life : \(self.life[index])" + "   Damages : \(self.arm.damage)"
         }
-func cureOneself(){
-        self.life +=  10 }
+        
+    }
+    func cureOneself(index: Int){
+        self.life[index] +=  10 }
     
     
-}
 
+}
