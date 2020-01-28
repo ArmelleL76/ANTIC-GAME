@@ -42,11 +42,11 @@ func increasePowerArm ()
         {self.arm.damage += 8}
     
         
-    func description(range : Int) {
+    func description(range : Int, team : Int)-> String {
         var description : [String] = ["","",""]
         
             description[range] =  "Arm : \(self.armName[range])" + "   Life : \(self.life[range])" + "   Damages : \(self.arm.damage)"
-       print("\(description[range])")
+       return "\(description[range])"
         }
   
    

@@ -9,7 +9,7 @@
 import Foundation
 class Viking : Warrior {
 init()
-{super.init(fighterName : "", armName : "Ax", arm : Ax(), life : 90)
+{super.init(fighterName : "",  arm : Ax())
     
 }
 }

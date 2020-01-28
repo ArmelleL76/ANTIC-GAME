@@ -41,9 +41,9 @@ class Player{
           playerChoice = choice
                      switch playerChoice
                        {
-                       case "1" : fighter.receiveDamage(damage : fighter.arm.damage)
+                     case "1" : fighter.receiveDamage(damage : fighter.arm.damage, index: 1)
                        case "2" : fighter.increasePowerArm()
-                       case "3" : fighter.cureOneself()
+                     case "3" : fighter.cureOneself(index: 1)
                        default : print("Choose a number in (1,2,3)")
                       
                     }

@@ -48,3 +48,7 @@ func collectNameFighter(number: String)->String
 
 }  // } de la classe
 //fonction displayWarriorResults
+func displayWarriorResults()-> String{
+    
+    return "0"
+}
