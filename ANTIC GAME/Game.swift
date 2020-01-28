@@ -39,7 +39,7 @@ func collectNamePlayer(number : String)-> String{
 //Players give names to their warriors
 
 func collectNameFighter(number: String)->String
-{ print("\(number)Player give a name to your fighters viking, gladiator, knight, in this order and do return")
+{ print("\(number)Player give a name to your fighters viking, gladiator, knight, in this order and do return after each name")
  let fighter = Warrior(fighterName: "", armName: "", arm: Ax(), life: 100)
     if let name = readLine(){ print("Welcome and good luck for fighting : \(name)")
         fighter.fighterName = name}
