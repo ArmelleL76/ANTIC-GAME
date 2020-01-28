@@ -33,3 +33,5 @@ player1.displayTeam()
 
 player2.displayTeam()
 
+//We display the carateristics of the warriors
+
