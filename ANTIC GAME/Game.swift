@@ -47,3 +47,4 @@ func collectNameFighter(number: String)->String
 }
 
 }
+//fonction displayWarriorResults
