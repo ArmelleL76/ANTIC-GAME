@@ -50,6 +50,7 @@ func collectNameFighter(number: String)->String
 //fonction displayWarriorResults
 func displayWarriorResultsTeam1()-> String{
     var display : String = ""
+    let fighter = Warrior(fighterName: "", arm: Ax())
     var fighterTeam1 : [String] = ["","",""]
     for index in 0...2 {
     fighterTeam1[index] += name.collectNameFighter(number: "first")
@@ -58,11 +59,12 @@ func displayWarriorResultsTeam1()-> String{
     
     let warriorType1 : [String] = ["Viking", "Gladiator", "Knight"]
     for index in 0...2 {
-        display += warriorType1[index] + fighterTeam1[index] }
+        display += warriorType1[index] + fighterTeam1[index] + fighter.description(range: index, team: 1)  }
     return display
 }
 func displayWarriorResultsTeam2()-> String{
     var display : String = ""
+    let fighter = Warrior(fighterName: "", arm: Ax())
     var fighterTeam2 : [String] = ["","",""]
     for index in 0...2 {
     fighterTeam2[index] += name.collectNameFighter(number: "first")
@@ -71,6 +73,6 @@ func displayWarriorResultsTeam2()-> String{
     
     let warriorType2 : [String] = ["Viking", "Gladiator", "Knight"]
     for index in 0...2 {
-        display += warriorType2[index] + fighterTeam2[index] }
+        display += warriorType2[index] + fighterTeam2[index] + fighter.description(range: index, team: 2) }
     return display
 }
