@@ -12,7 +12,7 @@ class Warrior{
     var armName : [String] = ["Ax", "Sword","BroadSword"]
     var arm: Weapon
     var damage : [Int] = [15,18,12]
-    var life : [Int] = [90,11,80]
+    var life : [Int] = [90,100,80]
     
     
     init ( fighterName : String, arm : Weapon)
