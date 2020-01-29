@@ -34,5 +34,5 @@ player1.displayTeam()
 player2.displayTeam()
 
 //We display the carateristics of the warriors
-print("\(displayWarriorResultsTeam1())")
+//print("\(displayWarriorResultsTeam1())")
 print("\(displayWarriorResultsTeam2())")
