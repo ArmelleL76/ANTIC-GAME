@@ -36,7 +36,7 @@ class Game {
         print("\(position)Player give your Name and do return\n")
         
         if  let name = readLine(){print("Welcome and good game: \(name)")
-         namePlayer[index] = name
+            namePlayer[index] = name}
             
         }
         return namePlayer
@@ -52,7 +52,7 @@ class Game {
         
         if let name = readLine(){ print("Welcome and good luck for fighting : \(name)")
             nameFighter[index] = name}
-            }
+        }
         return nameFighter
     
         }
@@ -67,9 +67,9 @@ class Game {
         var str2 : String = ""
         let fighter = Warrior(fighterName: "", arm: Ax())
         let warriorType : [String] = ["Viking","Gladiator","Knight"]
-        var namePlayer : [String] = self.collectNamePlayer()
-        var nameWarrior1 : [String] = self.collectNameFighter(position: "first")
-        var nameWarrior2 : [String] = self.collectNameFighter(position: "second")
+        let namePlayer : [String] = self.collectNamePlayer()
+        let nameWarrior1 : [String] = self.collectNameFighter(position: "first")
+        let nameWarrior2 : [String] = self.collectNameFighter(position: "second")
         
         
         
@@ -88,4 +88,4 @@ class Game {
         
         
 }
-}
+
