@@ -20,6 +20,7 @@
 		D5534C2623DA18C2000D5429 /* BroadSword.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5534C2523DA18C2000D5429 /* BroadSword.swift */; };
 		D5534C2823DA1991000D5429 /* RandomArm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5534C2723DA1991000D5429 /* RandomArm.swift */; };
 		D596264823DA34B000FCBD7F /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = D596264723DA34B000FCBD7F /* Warrior.swift */; };
+		D5E165A823E4AA6D0096BD1D /* game alternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E165A723E4AA6D0096BD1D /* game alternative.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 		D5534C2523DA18C2000D5429 /* BroadSword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadSword.swift; sourceTree = "<group>"; };
 		D5534C2723DA1991000D5429 /* RandomArm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomArm.swift; sourceTree = "<group>"; };
 		D596264723DA34B000FCBD7F /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
+		D5E165A723E4AA6D0096BD1D /* game alternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "game alternative.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				D518309223DB1A3800BCE6DE /* Knight.swift */,
 				D518309423DB1B5600BCE6DE /* Chest.swift */,
 				D518309623DB1B9F00BCE6DE /* Game.swift */,
+				D5E165A723E4AA6D0096BD1D /* game alternative.swift */,
 				D518309823DB1C2900BCE6DE /* Player.swift */,
 			);
 			path = "ANTIC GAME";
@@ -164,6 +167,7 @@
 				D518309923DB1C2900BCE6DE /* Player.swift in Sources */,
 				D518309323DB1A3800BCE6DE /* Knight.swift in Sources */,
 				D518309123DB1A2900BCE6DE /* Gladiator.swift in Sources */,
+				D5E165A823E4AA6D0096BD1D /* game alternative.swift in Sources */,
 				D518309723DB1B9F00BCE6DE /* Game.swift in Sources */,
 				D5534C2023DA15C0000D5429 /* Weapon.swift in Sources */,
 				D5534C2223DA17A2000D5429 /* Ax.swift in Sources */,

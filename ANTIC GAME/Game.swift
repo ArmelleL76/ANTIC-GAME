@@ -7,6 +7,8 @@
 //
 
 import Foundation
+
+
 class Game {
     var str : String = ""
     var number : String = "first"
@@ -22,57 +24,68 @@ class Game {
         myText += "3. Here is the list of possible fighters : \n\n******************\n\nTeam1: \n\nViking1, Gladiator1 and Knight1\n\n******************\n\nTeam2:\n\nViking2, Gladiator2 and Knight2\n\n******************\n\n"
         
         myText += "Here is a suggestion of optionnal names for your warriors :   \nVikings'names : Sigrid, Thor, Bjorn, Odin, Ragnar, Magnum... \nGladiators'names : Lucius, Marcus, Titus, Sextus, Quintus, Servius...\nKnights'names : Gauvain, Arthur, Perceval, Lancelot, Tristan...\n"
-   return myText }
+        return myText }
     
-
-// Players give their names
-func collectNamePlayer(number : String)-> String{
-    print("\(number)Player give your Name and do return")
-    let player = Player(namePlayer : "", numberTeam: 0)
-  if  let name = readLine(){print("Welcome and good game: \(name)")
-        player.namePlayer = name
-  
+    
+    // Players give their names
+    func collectNamePlayer()-> [String]{
+        let position = ["first","second"]
+        var namePlayer = ["",""]
+        for index in 0...1{
+        
+        print("\(position)Player give your Name and do return\n")
+        
+        if  let name = readLine(){print("Welcome and good game: \(name)")
+         namePlayer[index] = name
+            
+        }
+        return namePlayer
     }
-    return player.namePlayer
+    
+    //Players give names to their warriors
+    
+    func collectNameFighter(position: String)->[String]
+    {  var nameFighter = ["","",""]
+        for index in 0...2{
+        
+        print("\(position)Player give a name to your fighters in this order : viking, gladiator, knight,  and do return after each name")
+        
+        if let name = readLine(){ print("Welcome and good luck for fighting : \(name)")
+            nameFighter[index] = name}
+            }
+        return nameFighter
+    
+        }
+        
+    
+        
+    //fonction display
+    func displayWarriorTeam()-> String{
+        var display1 : String = ""
+        var display2 : String = ""
+        var str1 : String = ""
+        var str2 : String = ""
+        let fighter = Warrior(fighterName: "", arm: Ax())
+        let warriorType : [String] = ["Viking","Gladiator","Knight"]
+        var namePlayer : [String] = self.collectNamePlayer()
+        var nameWarrior1 : [String] = self.collectNameFighter(position: "first")
+        var nameWarrior2 : [String] = self.collectNameFighter(position: "second")
+        
+        
+        
+        for index in 0...2 {
+            str1 += "\(warriorType[index]) : \(nameWarrior1[index])   "+"\(fighter.description(range : index, team : 1))"+"\n\n"
+            str2 += "\(warriorType[index]) : \(nameWarrior2[index])   "+"\(fighter.description(range : index, team : 2))"+"\n\n"
+              }
+            display1 += "TEAM1     Player1 : \(namePlayer[0])\n\n"
+             display2 += "TEAM2     Player2 : \(namePlayer[1])\n\n"
+            display1 += str1
+            display2 += str2
+        
+        return display1 + display2
+      
+        }
+        
+        
 }
-
-//Players give names to their warriors
-
-func collectNameFighter(number: String)->String
-{ print("\(number)Player give a name to your fighters viking, gladiator, knight, in this order and do return after each name")
- let fighter = Warrior(fighterName: "", arm: Ax())
-    if let name = readLine(){ print("Welcome and good luck for fighting : \(name)")
-        fighter.fighterName = name}
-    return fighter.fighterName
-} // } terminant la fonction
-
-}  // } de la classe
-//fonction displayWarriorResults
-func displayWarriorResultsTeam1()-> String{
-    var display : String = ""
-    let fighter = Warrior(fighterName: "", arm: Ax())
-    var fighterTeam1 : [String] = ["","",""]
-    for index in 0...2 {
-    fighterTeam1[index] += name.collectNameFighter(number: "first")
-    }
-    
-    
-    let warriorType1 : [String] = ["Viking", "Gladiator", "Knight"]
-    for index in 0...2 {
-        display += warriorType1[index] + fighterTeam1[index] + fighter.description(range: index, team: 1)  }
-    return display
-}
-func displayWarriorResultsTeam2()-> String{
-    var display : String = ""
-    let fighter = Warrior(fighterName: "", arm: Ax())
-    var fighterTeam2 : [String] = ["","",""]
-    for index in 0...2 {
-    fighterTeam2[index] += name.collectNameFighter(number: "second")
-    }
-    
-    
-    let warriorType2 : [String] = ["Viking", "Gladiator", "Knight"]
-    for index in 0...2 {
-        display += warriorType2[index] + ":   " + fighterTeam2[index] + ":   " + fighter.description(range: index, team: 2)+"\n" }
-    return display
 }
