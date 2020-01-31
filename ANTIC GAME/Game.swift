@@ -33,9 +33,9 @@ class Game {
         var namePlayer = ["",""]
         for index in 0...1{
         
-        print("\(position)Player give your Name and do return\n")
+        print("\(position[index])Player give your Name and do return\n\n\n")
         
-        if  let name = readLine(){print("Welcome and good game: \(name)")
+        if  let name = readLine(){print("Welcome and good game: \(name)\n\n")
             namePlayer[index] = name}
             
         }
@@ -46,11 +46,10 @@ class Game {
     
     func collectNameFighter(position: String)->[String]
     {  var nameFighter = ["","",""]
+        print("\(position)Player give a name to your fighters in this order : viking, gladiator, knight,  and do return after each name\n\n")
         for index in 0...2{
         
-        print("\(position)Player give a name to your fighters in this order : viking, gladiator, knight,  and do return after each name")
-        
-        if let name = readLine(){ print("Welcome and good luck for fighting : \(name)")
+        if let name = readLine(){ print("Welcome and good luck for fighting : \(name)\n\n")
             nameFighter[index] = name}
         }
         return nameFighter
@@ -67,18 +66,18 @@ class Game {
         var str2 : String = ""
         let fighter = Warrior(fighterName: "", arm: Ax())
         let warriorType : [String] = ["Viking","Gladiator","Knight"]
-        let namePlayer : [String] = self.collectNamePlayer()
-        let nameWarrior1 : [String] = self.collectNameFighter(position: "first")
-        let nameWarrior2 : [String] = self.collectNameFighter(position: "second")
+        //let namePlayer : [String] = self.collectNamePlayer()
+        //let nameWarrior1 : [String] = self.collectNameFighter(position: "first")
+       // let nameWarrior2 : [String] = self.collectNameFighter(position: "second")
         
         
         
         for index in 0...2 {
-            str1 += "\(warriorType[index]) : \(nameWarrior1[index])   "+"\(fighter.description(range : index, team : 1))"+"\n\n"
-            str2 += "\(warriorType[index]) : \(nameWarrior2[index])   "+"\(fighter.description(range : index, team : 2))"+"\n\n"
+            str1 += "\(warriorType[index]) : "+"\(fighter.description(range : index, team : 1))"+"\n\n"
+            str2 += "\(warriorType[index]) :  "+"\(fighter.description(range : index, team : 2))"+"\n\n"
               }
-            display1 += "TEAM1     Player1 : \(namePlayer[0])\n\n"
-             display2 += "TEAM2     Player2 : \(namePlayer[1])\n\n"
+            display1 += "TEAM1     Player1 : \n\n"
+             display2 += "TEAM2     Player2 : \n\n"
             display1 += str1
             display2 += str2
         

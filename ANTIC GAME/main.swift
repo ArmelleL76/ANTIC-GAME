@@ -18,15 +18,16 @@ var namePlayer : [String] = collectName.collectNamePlayer()
 
 //The players give names to their warriors
 var fighterTeam1 : [String] = ["","",""]
-for index in 0...2 {
-fighterTeam1[index] += collectName.collectNameFighter(number: "first")
-}
+
+fighterTeam1 = collectName.collectNameFighter(position: "first")
+print("TEAM1 : \(fighterTeam1)\n\n")
 var fighterTeam2 : [String] = ["","",""]
-for range in 0...2 {
-fighterTeam2[range] += collectName.collectNameFighter(number: "second")
-}
 
+fighterTeam2 = collectName.collectNameFighter(position: "second")
+print("TEAM2 : \(fighterTeam2)\n\n")
 
+//Show the teams
+print("\(display.displayWarriorTeam())")
 
 // A chest will appear or not
  // à intégrer à battle dans game 
@@ -38,5 +39,5 @@ if  bool == chest.appear(){
 }
 
 
-let game = GameAlternative()
-game.start()
+//let game = GameAlternative()
+//game.start()
