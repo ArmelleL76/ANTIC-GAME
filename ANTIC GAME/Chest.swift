@@ -12,13 +12,15 @@ class Chest{
     init(randomStrenght : Int)
     {self.randomStrenght = randomStrenght}
     
-    func appear()->Bool{
+    func appear()->String{
         let random = Int.random(in: 1..<7)
         if random % 3 == 0 {
-            print("A chest has appeared\n")
-            return true}
+            
+            return "A chest has appeared\n"}
        
-        else {return false}
+        else
+        {return "No chest this turn, sorry"}
+            
     }
     func armStrenght()->Int{
         let randomInteger = Int.random(in: 8..<21)

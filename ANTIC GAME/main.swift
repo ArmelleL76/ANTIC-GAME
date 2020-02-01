@@ -18,10 +18,9 @@ print("\(display.displayWarriorTeam())")
  // à intégrer à battle dans game 
 var chest = Chest(randomStrenght : 10)
 
-if  chest.appear(){
-    let damage : Int = chest.armStrenght()
-    print("The chest contains a random Arm of strenght : \(damage)\n)")
-}
+
+  print(chest.appear())
+
 
 
 //let game = GameAlternative()
