@@ -17,8 +17,8 @@ print("\(display.displayWarriorTeam())")
 // A chest will appear or not
  // à intégrer à battle dans game 
 var chest = Chest(randomStrenght : 10)
-var bool : Bool = false
-if  bool == chest.appear(){
+
+if  chest.appear(){
     let damage : Int = chest.armStrenght()
     print("The chest contains a random Arm of strenght : \(damage)\n)")
 }

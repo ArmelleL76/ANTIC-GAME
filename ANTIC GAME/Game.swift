@@ -32,7 +32,7 @@ class Game {
     // Players give their names
     func collectNamePlayer()-> [String]{
         let position = ["first","second"]
-        var namePlayer = ["",""]
+        var namePlayer =  ["",""]
         for index in 0...1{
         
         print("\n\(position[index])Player give your Name and do return\n\n")
@@ -50,7 +50,7 @@ class Game {
     {  var nameFighter = ["","",""]
         print("\n\(position)Player give a name to your fighters in this order : viking, gladiator, knight,  and do return after each name\n")
         for index in 0...2{
-        print("\n\(position)Player give a name to your fighters in this order : viking, gladiator, knight,  and do return after each name\n")
+        
         if let name = readLine(){ print("\nWelcome and good luck for fighting : \(name)\n")
             nameFighter[index] = name}
         }

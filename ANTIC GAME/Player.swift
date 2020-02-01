@@ -26,6 +26,12 @@ class Player{
     func displayTeam ()
     {print("       ---  TEAM : \(numberTeam)  ---   " + "---   PLAYER\(numberTeam) : \(namePlayer)   ---")
    }
+    
+    func chooseWarrior()->[Warrior]{
+    print("Choose a warrior in your team")
+        
+     return []
+    }
     func play(fighter : Warrior)
     {
         var playerChoice : String = ""
