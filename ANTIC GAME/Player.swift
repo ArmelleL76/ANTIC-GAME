@@ -8,17 +8,28 @@
 
 import Foundation
 class Player{
-    var namePlayer : String
+    var namePlayer : [String] = ["",""]
     
     var numberTeam : Int
     
-    init (namePlayer : String, numberTeam : Int)
+    init (numberTeam : Int)
     {
-    self.namePlayer = namePlayer
-    
-    self.numberTeam = numberTeam
+   self.numberTeam = numberTeam
         
     }
+  func collectNamePlayer()-> [String]{
+      let position = ["first","second"]
+     
+      for index in 0...1{
+      
+      print("\n\(position[index])Player give your Name and do return\n\n")
+      
+      if  let name = readLine(){print("\nWelcome and good game: \(name)\n")
+          namePlayer[index] = name}
+          
+      }
+      return namePlayer
+  }
   
     
     func displayTeam ()
