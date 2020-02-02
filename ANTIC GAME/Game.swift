@@ -10,8 +10,6 @@ import Foundation
 
 
 class Game {
-    var str : String = ""
-    var number : String = "first"
     var team1 : [Warrior] = []
     var team2 : [Warrior] = []
     
@@ -70,11 +68,13 @@ class Game {
         print(chest.appear())
 
     }
+    
     func isAlive(team1 : [Warrior],team2 : [Warrior])-> Bool
     { if team1.count>0 && team2.count>0
     {return true}
     else {return false}
     }
-        
+    func battle()
+    {  }
 }
 
