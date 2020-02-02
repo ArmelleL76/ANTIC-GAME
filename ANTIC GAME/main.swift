@@ -16,11 +16,7 @@ print("\(display.displayWarriorTeam())")
 
 // A chest will appear or not
  // à intégrer à battle dans game 
-var chest = Chest(randomStrenght : 10)
-
-
-  print(chest.appear())
-
+display.appearChest()
 
 //let game = GameAlternative()
 //game.start()
