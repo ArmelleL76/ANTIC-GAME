@@ -95,6 +95,26 @@ class Game {
         return display1 + display2
       
         }
+    //On constitue les équipes
+    func constructTeam()->[Warrior]{
+        
+    return []
+    }
+    
+    //Which player'turn is it?
+    func whoPlay(round : Int) ->Int{
+        if round%2 == 1 { print("Player1 , it's your turn")  }
+        else {  print("Player2 it's your turn") }
+        return round%2
+    }
+    
+    //the player choose a fighter in each team
+    func chooseWarrior (no : Int) -> [String]{
+        
+    return []
+    }
+    
+    
     
     //apparition du coffre
     func appearChest(){
