@@ -62,18 +62,20 @@ class Game {
     
     
     
-    //apparition du coffre
+    //a chest appear
     func appearChest(){
         let chest = Chest(randomStrenght : 10)
         print(chest.appear())
 
     }
-    
+    //
     func isAlive(team1 : [Warrior],team2 : [Warrior])-> Bool
     { if team1.count>0 && team2.count>0
     {return true}
     else {return false}
     }
+    
+    
     func battle()
     {  }
 }
