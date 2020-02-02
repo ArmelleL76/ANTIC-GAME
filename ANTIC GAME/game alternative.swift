@@ -11,9 +11,9 @@ class GameAlternative {
     var player1: Player
     var player2: Player
     
-    init() {
-        self.player1 = Player(namePlayer: "", numberTeam: 1)
-        self.player2 = Player(namePlayer: "", numberTeam: 2)
+    init(player1: Player, player2 : Player) {
+        self.player1 = player1
+       self.player2 = player2
     }
     
     func start() {
