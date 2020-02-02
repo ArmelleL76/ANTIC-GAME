@@ -9,7 +9,7 @@
 import Foundation
 class Gladiator : Warrior {
     init()
-    {super.init(fighterName : "", arm : BroadSword())
+    {super.init(arm : BroadSword())
         
     }
 }
