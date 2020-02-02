@@ -32,9 +32,16 @@ class Player{
   }
   
     
-    func displayTeam ()
-    {print("       ---  TEAM : \(numberTeam)  ---   " + "---   PLAYER\(numberTeam) : \(namePlayer)   ---")
-   }
+    func displayTeam1 (numberTeam : Int)->String
+    { var string = ""
+       string += "       ---  TEAM : \(numberTeam)  ---   " + "---   PLAYER\(numberTeam) : \(namePlayer[0])   ---"
+   return string
+    }
+    func displayTeam2 (numberTeam : Int)->String
+     { var string = ""
+        string += "       ---  TEAM : \(numberTeam)  ---   " + "---   PLAYER\(numberTeam) : \(namePlayer[1])   ---"
+    return string
+     }
     
     func chooseWarrior()->[Warrior]{
     print("Choose a warrior in your team")

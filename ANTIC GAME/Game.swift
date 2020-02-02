@@ -29,17 +29,19 @@ class Game {
         return myText }
     
     
-    // Players give their names
-    
-    //Players give names to their warriors
-    
-    
-    
-        
     //fonction display
     func display()-> String{
-        
-      return ""
+        var team1 : String = ""
+        var team2 : String = ""
+        var fighters1 : String = ""
+        var fighters2 : String = ""
+        let player = Player(numberTeam: 1)
+       let fighter = Warrior(arm: Ax())
+        team1 += player.displayTeam1(numberTeam: 1)
+        team2 += player.displayTeam2(numberTeam: 2)
+        fighters1 = fighter.displayFightersTeam1()
+        fighters2 = fighter.displayFightersTeam2()
+      return team1 + fighters1 + team2 + fighters2
         }
     //On constitue les équipes
     func constructTeam()->[Warrior]{

@@ -43,12 +43,7 @@ func increasePowerArm ()
         {self.arm.damage += 8}
     
         
-    func description(range : Int, team : Int)-> String {
-        var description : [String] = ["","",""]
-        
-        description[range] =  "Arm : \(self.armName[range])" + "   Life : \(self.life[range])" + "   Damages : \(self.arm.damage)"
-       return "\(description[range])"
-        }
+    
   
    
     func cureOneself(index: Int){
@@ -78,17 +73,23 @@ func increasePowerArm ()
         return fighterNameTeam2
     
         }
-    func displayFightersTeam1(){
+    func displayFightersTeam1()->String{
           let warriorType : [String] = ["Viking","Gladiator","Knight"]
+        var string1 = ""
         for index in 0...2
-        { print("\(warriorType[index]) :   \(fighterNameTeam1[index]) " + "---Arm : \(armName[index])" + "---Dameges : \(damage[index])" + "---Life : \(life[index])")
-         }
+{ string1 += "\(warriorType[index]) :" +   "\(fighterNameTeam1[index])\n "
+   + "---Arm : \(armName[index])"
+    + "---Dameges : \(damage[index])" + "---Life : \(life[index])\n"
+     }
+        return string1
     }
-    func displayFightersTeam2(){
+    func displayFightersTeam2()->String{
               let warriorType : [String] = ["Viking","Gladiator","Knight"]
+         var string2 = ""
             for index in 0...2
-            { print("\(warriorType[index]) :   \(fighterNameTeam2[index]) " + "---Arm : \(armName[index])" + "---Dameges : \(damage[index])" + "---Life : \(life[index])")
+            { string2 += "\(warriorType[index]) :   \(fighterNameTeam2[index]) " + "---Arm : \(armName[index])" + "---Dameges : \(damage[index])" + "---Life : \(life[index])"
              }
+        return string2
         }
     }
 
