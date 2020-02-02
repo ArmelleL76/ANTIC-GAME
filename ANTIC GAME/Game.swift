@@ -69,10 +69,10 @@ class Game {
         var str2 : String = ""
         let fighter = Warrior(fighterName: "", arm: Ax())
         let warriorType : [String] = ["Viking","Gladiator","Knight"]
-       let namePlayer : [String] = collectNamePlayer()
-        let nameWarrior1 : [String] = collectNameFighter(position: "first")
-        let nameWarrior2 : [String] = collectNameFighter(position: "second")
-        
+        let namePlayer : [String] = self.collectNamePlayer()
+        let nameWarrior1 : [String] = self.collectNameFighter(position: "first")
+        let nameWarrior2 : [String] = self.collectNameFighter(position: "second")
+      
       
         
         for index in 0...2 {

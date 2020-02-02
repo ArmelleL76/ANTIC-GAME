@@ -22,6 +22,5 @@ var chest = Chest(randomStrenght : 10)
   print(chest.appear())
 
 
-
 //let game = GameAlternative()
 //game.start()

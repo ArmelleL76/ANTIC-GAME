@@ -19,9 +19,7 @@ class Player{
     self.numberTeam = numberTeam
         
     }
-    func chooseWarrior() {
-    print()
-    }
+  
     
     func displayTeam ()
     {print("       ---  TEAM : \(numberTeam)  ---   " + "---   PLAYER\(numberTeam) : \(namePlayer)   ---")
