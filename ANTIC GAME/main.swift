@@ -12,10 +12,7 @@ var display = Game()
 print(display.presentation())
 
 //We give name to players, players give name to their fighters and we display the teams
-print("\(display.collectNamePlayer())")
-print("\(display.collectNameFighter1())")
-print("\(display.collectNameFighter2())")
-print("\(display.displayWarriorTeam())")
+
 
 // A chest will appear or not
  // à intégrer à battle dans game 
