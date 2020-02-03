@@ -34,6 +34,7 @@ class Player{
     
     func displayTeam1 (numberTeam : Int)->String
     { var string = ""
+       
        string += "       ---  TEAM : \(numberTeam)  ---   " + "---   PLAYER\(numberTeam) : \(namePlayer[0])   ---"
    return string
     }
