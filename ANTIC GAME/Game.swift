@@ -10,8 +10,7 @@ import Foundation
 
 
 class Game {
-    var str : String = ""
-    var number : String = "first"
+   
     var team1 : [Warrior] = []
     var team2 : [Warrior] = []
     init(){}
