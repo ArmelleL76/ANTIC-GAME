@@ -13,7 +13,11 @@ class Game {
    
     var team1 : [Warrior] = []
     var team2 : [Warrior] = []
-    init(){}
+    init(team1 : [Warrior], team2 : [Warrior]){
+        self.team1 = team1
+        self.team2 = team2
+        
+    }
     func presentation()-> String{
         //Présentation du jeu
         var myText : String = ""
@@ -54,7 +58,12 @@ class Game {
 
            }
 
-        
+    func decreaseTeam(team : [Warrior]){
+        var count = team.count
+        if count > 0 {
+            count -= 1}
+        else { count = 0}
+    }
    
     func isAlive(team1 : [Warrior],team2 : [Warrior])-> Bool
     { if team1.count>0 && team2.count>0
