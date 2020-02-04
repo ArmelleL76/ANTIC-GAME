@@ -21,18 +21,32 @@ class Warrior{
         self.arm = arm
         
         }
-   func collectNameFighter(position: String)->[String]
-   {  var nameFighter = ["","",""]
-       print("\n\(position)Player give a name to your fighters in this order : viking, gladiator, knight,  and do return after each name\n")
+   func collectNameFighterTeam1()->[String]
+   {  var nameFighter1 = ["","",""]
+       print("\nFirst Player give a name to your fighters in this order : viking, gladiator, knight,  and do return after each name\n")
        for index in 0...2{
        
        if let name = readLine(){ print("\nWelcome and good luck for fighting : \(name)\n")
-           nameFighter[index] = name}
+           nameFighter1[index] = name}
        }
        
-       return nameFighter
+       return nameFighter1
    
        }
+    
+    func collectNameFighterTeam2()->[String]
+      {  var nameFighter2 = ["","",""]
+          print("\nSecond Player give a name to your fighters in this order : viking, gladiator, knight,  and do return after each name\n")
+          for index in 0...2{
+          
+          if let name = readLine(){ print("\nWelcome and good luck for fighting : \(name)\n")
+              nameFighter2[index] = name}
+          }
+          
+          return nameFighter2
+      
+          }
+          
        
        
     func receiveDamage(damage : Int, index: Int){
@@ -55,9 +69,10 @@ func increasePowerArm ()
     
         
     func description(range : Int, team : Int)-> String {
+        
         var description : [String] = ["","",""]
         
-        description[range] =  "Arm : \(self.armName[range])" + "   Life : \(self.life[range])" + "   Damages : \(self.arm.damage)"
+        description[range] = "Arm : \(self.armName[range])" + "   Life : \(self.life[range])" + "   Damages : \(self.arm.damage)\n"
        return "\(description[range])"
         }
   

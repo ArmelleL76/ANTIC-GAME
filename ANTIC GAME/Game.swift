@@ -29,11 +29,32 @@ class Game {
         return myText }
     
     
-    //fonction display
-       func displayWarriorTeam()-> String{
-        return ""
+    //fonction displayTEAMS()
+       
+    func displayWarriorTeams(){
+        let player = Player(playerName : "")
+     print(player.displayTeam())
+
+
+
+        let fighter = Warrior(fighterName: "", arm: Ax())
+     let fighterTeam1 = fighter.collectNameFighterTeam1()
+     let fighterTeam2 = fighter.collectNameFighterTeam2()
+
+         print(" Team1 :  ")
+        
+         for index in 0...2
+         {
+          print("Name : \(fighterTeam1[index])   " + fighter.description(range: index, team: 1))}
+
+     print(" Team2 :  ")
+
+      for index in 0...2
+      {
+       print("Name : \(fighterTeam2[index])   " + fighter.description(range: index, team: 2))}
+
            }
-    
+
         
    
     func isAlive(team1 : [Warrior],team2 : [Warrior])-> Bool

@@ -8,39 +8,39 @@
 
 import Foundation
 class Player{
-    var playerName : [String] = ["",""]
+    var playerName : String
     
-    var numberTeam : Int
+    var numberTeam = [1,2]
     var team :[Warrior] = [Viking(),Gladiator(),Knight()]
     
-    init (numberTeam : Int)
+    init (playerName : String)
     {
-  
-    
-    self.numberTeam = numberTeam
-   
+        self.playerName = playerName
         
     }
     
     // Players give their names
-    func collectNamePlayer()-> [String]{
-       
+    func collectNamePlayer()->[String]{
+       var names = [String]()
        print("\nFist Player give your Name and do return\n\n")
         
-        if  let name = readLine(){print("\nWelcome and good game: \(name)\n")
-            self.playerName[0] = name}
+        if  let name1 = readLine(){print("\nWelcome and good game: \(name1)\n")
+            names.append(name1)}
         print("\nSecond Player give your Name and do return\n\n")
         
-        if  let name = readLine(){print("\nWelcome and good game: \(name)\n")
-            self.playerName[1] = name}
-     
-        return playerName
+        if  let name2 = readLine(){print("\nWelcome and good game: \(name2)\n")
+            names.append(name2)}
+     return names
+       
     }
     
     
-    func displayTeam(){
-       
-        print("       ---  TEAM : \(numberTeam)  ---   " + "---   PLAYER\(numberTeam) : \(playerName)   ---")
+    func displayTeam()-> String{
+        let name : [String] = collectNamePlayer()
+        var monText = ""
+        monText = "   ---  TEAM : \(numberTeam[0]) : ---" + "  PLAYER\(numberTeam[0]) : \(name[0])   ---\n\n"
+        monText += "   ---  TEAM : \(numberTeam[1]) : ---" + "  PLAYER\(numberTeam[1]) : \(name[1])   ---\n\n"
+    return monText
     }
     
     
