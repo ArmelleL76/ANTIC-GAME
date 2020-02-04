@@ -21,7 +21,19 @@ class Warrior{
         self.arm = arm
         
         }
+   func collectNameFighter(position: String)->[String]
+   {  var nameFighter = ["","",""]
+       print("\n\(position)Player give a name to your fighters in this order : viking, gladiator, knight,  and do return after each name\n")
+       for index in 0...2{
+       
+       if let name = readLine(){ print("\nWelcome and good luck for fighting : \(name)\n")
+           nameFighter[index] = name}
+       }
+       
+       return nameFighter
    
+       }
+       
        
     func receiveDamage(damage : Int, index: Int){
             self.life[index] = self.life[index] - damage

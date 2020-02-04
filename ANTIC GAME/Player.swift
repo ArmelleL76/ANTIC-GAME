@@ -8,25 +8,44 @@
 
 import Foundation
 class Player{
-    var namePlayer : String
+    var playerName : [String] = ["",""]
     
     var numberTeam : Int
+    var team :[Warrior] = [Viking(),Gladiator(),Knight()]
     
-    init (namePlayer : String, numberTeam : Int)
+    init (numberTeam : Int)
     {
-    self.namePlayer = namePlayer
+  
     
     self.numberTeam = numberTeam
+   
         
     }
-    func chooseWarrior() {
-    print()
+    
+    // Players give their names
+    func collectNamePlayer()-> [String]{
+       
+       print("\nFist Player give your Name and do return\n\n")
+        
+        if  let name = readLine(){print("\nWelcome and good game: \(name)\n")
+            self.playerName[0] = name}
+        print("\nSecond Player give your Name and do return\n\n")
+        
+        if  let name = readLine(){print("\nWelcome and good game: \(name)\n")
+            self.playerName[1] = name}
+     
+        return playerName
     }
     
-    func displayTeam ()
-    {print("       ---  TEAM : \(numberTeam)  ---   " + "---   PLAYER\(numberTeam) : \(namePlayer)   ---")
-   }
     
+    func displayTeam(){
+       
+        print("       ---  TEAM : \(numberTeam)  ---   " + "---   PLAYER\(numberTeam) : \(playerName)   ---")
+    }
+    
+    
+    
+   
     func chooseWarrior()->[Warrior]{
     print("Choose a warrior in your team")
         
