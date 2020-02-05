@@ -11,13 +11,14 @@ import Foundation
 
 class Game {
    
-    var team1 : [Warrior] = []
-    var team2 : [Warrior] = []
-    init(team1 : [Warrior], team2 : [Warrior]){
-        self.team1 = team1
-        self.team2 = team2
-        
-    }
+    var fighterTeam1 = [String]()
+    var fighterTeam2 = [String]()
+   var team1 = [Warrior]()
+   var team2 = [Warrior]()
+    init(fighterTeam1: [String], fighterTeam2 : [String]){
+        self.fighterTeam1 = fighterTeam1
+        self.fighterTeam2 = fighterTeam2
+       }
     func presentation()-> String{
         //Présentation du jeu
         var myText : String = ""
@@ -41,8 +42,8 @@ class Game {
 
 
         let fighter = Warrior(fighterName: "", arm: Ax())
-     let fighterTeam1 = fighter.collectNameFighterTeam1()
-     let fighterTeam2 = fighter.collectNameFighterTeam2()
+      fighterTeam1 = fighter.collectNameFighterTeam1()
+      fighterTeam2 = fighter.collectNameFighterTeam2()
 
          print(" Team1 :  ")
         
@@ -57,7 +58,32 @@ class Game {
        print("Name : \(fighterTeam2[index])   " + fighter.description(range: index, team: 2))}
 
            }
-
+    // construction des équipes
+    func buidTeam1 () ->[Warrior] {
+    let vikingOne = Warrior(fighterName: fighterTeam1[0], arm: Ax())
+    let gladiatorOne = Warrior(fighterName: fighterTeam1[1], arm: BroadSword())
+    let knightOne = Warrior(fighterName: fighterTeam1[2], arm: Sword())
+    
+    self.team1 = [vikingOne, gladiatorOne, knightOne]
+  
+    return team1
+    
+    }
+    func buidTeam2 () ->[Warrior] {
+    
+    let vikingTwo = Warrior(fighterName: fighterTeam2[0], arm: Ax())
+       let gladiatorTwo = Warrior(fighterName: fighterTeam2[1], arm: BroadSword())
+       let knightTwo = Warrior(fighterName: fighterTeam2[2], arm: Sword())
+    
+    self.team2 = [vikingTwo, gladiatorTwo, knightTwo]
+    return  team2
+    
+    }
+    
+  
+    
+    
+    
     func decreaseTeam(team : [Warrior]){
         var count = team.count
         if count > 0 {
@@ -70,6 +96,7 @@ class Game {
     {return true}
     else {return false}
     }
+    
         
 }
 

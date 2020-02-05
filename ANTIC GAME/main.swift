@@ -8,10 +8,13 @@
 
 import Foundation
 //Short presentation of the game
-var game = Game()
+var game = Game(fighterTeam1: [], fighterTeam2: [])
 print(game.presentation())
 game.displayWarriorTeams()
 
+
+//Je fais un print pour tester la fonction buidTeam
+print(game.buidTeam1())
 
 
 
