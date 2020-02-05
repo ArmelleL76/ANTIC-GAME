@@ -14,8 +14,8 @@ game.displayWarriorTeams()
 
 
 //Je fais un print pour tester la fonction buidTeam
-print(game.buidTeam1())
-
+//print(game.buidTeam1()[0].fighterName)
+// me renvoie bien le nom du premier viking, ouf! 
 
 
 
