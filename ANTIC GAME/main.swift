@@ -8,12 +8,12 @@
 
 import Foundation
 //Short presentation of the game
-var game = Game(fighterTeam1: [], fighterTeam2: [])
+var game = Game(player1 : Player(playerName : ""), player2 : Player(playerName : ""))
 print(game.presentation())
 game.displayWarriorTeams()
 
 
-//Je fais un print pour tester la fonction buidTeam
+//Je fais un print pour tester la fonction buildTeam
 //print(game.buidTeam1()[0].fighterName)
 // me renvoie bien le nom du premier viking, ouf! 
 

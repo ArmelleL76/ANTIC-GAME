@@ -10,15 +10,21 @@ import Foundation
 
 
 class Game {
-   
+    var player1 : Player
+    var player2 : Player
     var fighterTeam1 = [String]()
     var fighterTeam2 = [String]()
    var team1 = [Warrior]()
    var team2 = [Warrior]()
-    init(fighterTeam1: [String], fighterTeam2 : [String]){
-        self.fighterTeam1 = fighterTeam1
-        self.fighterTeam2 = fighterTeam2
+    init(player1 : Player, player2 : Player)
+    {
+        self.player1 = player1
+        self.player2 = player2
        }
+    func start() {
+        
+    }
+    
     func presentation()-> String{
         //Présentation du jeu
         var myText : String = ""
@@ -58,6 +64,10 @@ class Game {
        print("Name : \(fighterTeam2[index])   " + fighter.description(range: index, team: 2))}
 
            }
+    func battle(){
+       var round = 0
+        round += 1
+    }
     // construction des équipes
     func buidTeam1 () ->[Warrior] {
     let vikingOne = Warrior(fighterName: fighterTeam1[0], arm: Ax())
@@ -79,9 +89,25 @@ class Game {
     return  team2
     
     }
-    
+    func playerWhoPlay(round : Int ) -> Player{
+         if round % 2 == 0 { return player2
+                
+            } else {
+                return player1
+                
+            }
+       
+    }
   
-    
+    func playerWhoDontPlay(round : Int) -> Player{
+        if round % 2 == 0 { return player1
+                       
+                   } else {
+                       return player2
+                       
+                   }
+        
+    }
     
     
     func decreaseTeam(team : [Warrior]){
@@ -97,6 +123,8 @@ class Game {
     else {return false}
     }
     
+    func displayResults(){
         
+    }
 }
 
