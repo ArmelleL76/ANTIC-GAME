@@ -8,26 +8,27 @@
 
 import Foundation
 class Warrior{
-    var fighterName : String
+    var nameFighter1 = [String]()
+    var nameFighter2 = [String]()
     var armName : [String] = ["Ax", "Sword","BroadSword"]
     var arm: Weapon
     var damage : [Int] = [15,18,12]
     var life : [Int] = [90,100,80]
     
     
-    init ( fighterName : String, arm : Weapon)
+    init (arm : Weapon)
     {
-        self.fighterName = fighterName
+      
         self.arm = arm
         
         }
    func collectNameFighterTeam1()->[String]
-   {  var nameFighter1 = ["","",""]
+   { self.nameFighter1 = []
        print("\nFirst Player give a name to your fighters in this order : viking, gladiator, knight,  and do return after each name\n")
-       for index in 0...2{
+       for _ in 0...2{
        
        if let name = readLine(){ print("\nWelcome and good luck for fighting : \(name)\n")
-           nameFighter1[index] = name}
+        nameFighter1.append(name)}
        }
        
        return nameFighter1
@@ -35,12 +36,12 @@ class Warrior{
        }
     
     func collectNameFighterTeam2()->[String]
-      {  var nameFighter2 = ["","",""]
+    {  self.nameFighter2 = []
           print("\nSecond Player give a name to your fighters in this order : viking, gladiator, knight,  and do return after each name\n")
-          for index in 0...2{
+          for _ in 0...2{
           
           if let name = readLine(){ print("\nWelcome and good luck for fighting : \(name)\n")
-              nameFighter2[index] = name}
+            nameFighter2.append(name)}
           }
           
           return nameFighter2

@@ -8,8 +8,9 @@
 
 import Foundation
 class Gladiator : Warrior {
+    var  name : String = ""
     init()
-    {super.init(fighterName : "", arm : BroadSword())
+    {super.init(arm : BroadSword())
         
     }
 }

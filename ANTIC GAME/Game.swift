@@ -16,6 +16,7 @@ class Game {
     var fighterTeam2 = [String]()
    var team1 = [Warrior]()
    var team2 = [Warrior]()
+    
     init(player1 : Player, player2 : Player)
     {
         self.player1 = player1
@@ -47,7 +48,7 @@ class Game {
 
 
 
-        let fighter = Warrior(fighterName: "", arm: Ax())
+        let fighter = Warrior(arm: Ax())
       fighterTeam1 = fighter.collectNameFighterTeam1()
       fighterTeam2 = fighter.collectNameFighterTeam2()
 
@@ -65,27 +66,35 @@ class Game {
 
            }
     func battle(){
-       var round = 0
+   
+ 
+ 
+        var round = 0
         round += 1
+     
     }
     // construction des équipes
-    func buidTeam1 () ->[Warrior] {
-    let vikingOne = Warrior(fighterName: fighterTeam1[0], arm: Ax())
-    let gladiatorOne = Warrior(fighterName: fighterTeam1[1], arm: BroadSword())
-    let knightOne = Warrior(fighterName: fighterTeam1[2], arm: Sword())
-    
-    self.team1 = [vikingOne, gladiatorOne, knightOne]
+    func buildTeam1 () ->[Warrior] {
+   let vikingOne = Warrior(arm: Ax())
+        team1.append(vikingOne)
+    let gladiatorOne = Warrior(arm: BroadSword())
+        team1.append(gladiatorOne)
+    let knightOne = Warrior(arm: Sword())
+        team1.append(knightOne)
+      
   
     return team1
     
     }
-    func buidTeam2 () ->[Warrior] {
+    func buildTeam2 () ->[Warrior] {
     
-    let vikingTwo = Warrior(fighterName: fighterTeam2[0], arm: Ax())
-       let gladiatorTwo = Warrior(fighterName: fighterTeam2[1], arm: BroadSword())
-       let knightTwo = Warrior(fighterName: fighterTeam2[2], arm: Sword())
-    
-    self.team2 = [vikingTwo, gladiatorTwo, knightTwo]
+    let vikingTwo = Warrior( arm: Ax())
+         team2.append(vikingTwo)
+       let gladiatorTwo = Warrior(arm: BroadSword())
+           team2.append(gladiatorTwo)
+       let knightTwo = Warrior(arm: Sword())
+       team2.append(knightTwo)
+   
     return  team2
     
     }

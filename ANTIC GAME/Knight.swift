@@ -8,8 +8,9 @@
 
 import Foundation
 class Knight : Warrior {
+    var  name : String = ""
     init()
-    {super.init(fighterName : "", arm : Sword())
+    {super.init(arm : Sword())
         
     }
 }
