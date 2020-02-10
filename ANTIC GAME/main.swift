@@ -11,8 +11,8 @@ import Foundation
 var game = Game(player1 : Player(playerName : ""), player2 : Player(playerName : ""))
 print(game.presentation())
 game.displayWarriorTeams()
-print(game.fighterTeam1)
-print(game.fighterTeam2)
+//print(game.fighterTeam1)  les noms sont bien dans fighterTeam
+//print(game.fighterTeam2)
 
 //Je fais un print pour tester la fonction buildTeam
 //print(game.buidTeam1()[0].fighterName)

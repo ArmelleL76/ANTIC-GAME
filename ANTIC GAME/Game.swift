@@ -70,6 +70,15 @@ class Game {
  
  
         var round = 0
+        let playerWP = playerWhoPlay(round: round)
+        print(player1.playerName)
+        _ = playerWhoDontPlay(round: round)
+        print(player2.playerName)
+        switch playerWP {
+        case 1 :  print("Player1 it's your turn, first choose a fighter in team1 : , ")
+        case 2 : print("Player2 it's your turn, first choose e fighter in team 2")
+        default : break
+        }
         round += 1
      
     }
@@ -98,21 +107,21 @@ class Game {
     return  team2
     
     }
-    func playerWhoPlay(round : Int ) -> Player{
-         if round % 2 == 0 { return player2
+    func playerWhoPlay(round : Int ) -> Int{
+         if round % 2 == 0 { return 2
                 
             } else {
-                return player1
+                return 1
                 
             }
        
     }
   
-    func playerWhoDontPlay(round : Int) -> Player{
-        if round % 2 == 0 { return player1
+    func playerWhoDontPlay(round : Int) -> Int{
+        if round % 2 == 0 { return 1
                        
                    } else {
-                       return player2
+                       return 2
                        
                    }
         
